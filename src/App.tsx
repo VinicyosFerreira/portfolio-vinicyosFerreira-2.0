@@ -1,10 +1,11 @@
-import './App.css'
+import { Button } from './components/ui/button'
 
 function App() {
 
   return (
-    <div className='bg-red-500'>
+    <div className='bg-background text-foreground'>
         <h1>Novo portfólio</h1>
+        <Button>Teste</Button>
     </div>
   )
 }

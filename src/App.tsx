@@ -1,11 +1,9 @@
-import { Button } from './components/ui/button'
-
+import Header from './components/app/Header'
 function App() {
 
   return (
-    <div className='bg-background text-foreground'>
-        <h1>Novo portfólio</h1>
-        <Button>Teste</Button>
+    <div>
+        <Header/>
     </div>
   )
 }

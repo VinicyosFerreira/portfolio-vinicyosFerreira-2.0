@@ -14,7 +14,7 @@ import IconsContact from './IconsContact';
 
 const NavigationMenu = () => {
   return (
-    <Sheet >
+    <Sheet>
       <SheetTrigger asChild>
         <Button
           variant="outline"
@@ -26,7 +26,7 @@ const NavigationMenu = () => {
       </SheetTrigger>
       <SheetContent className='w-2/4' aria-describedby={undefined}>
         <SheetHeader>
-          <SheetTitle ></SheetTitle>
+          <SheetTitle></SheetTitle>
         </SheetHeader>
         <NavigationLink>Home</NavigationLink>
         <NavigationLink>Sobre</NavigationLink>

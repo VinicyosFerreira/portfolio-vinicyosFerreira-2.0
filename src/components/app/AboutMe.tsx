@@ -1,6 +1,6 @@
 const AboutMe = () => {
   return (
-    <div className="flex flex-col items-center justify-center mt-20">
+    <div className="flex flex-col items-center justify-center mt-20" id="aboutMe">
       <div>
         <h2 className="font-bold text-primary text-2xl">Sobre</h2>
       </div>
@@ -9,7 +9,7 @@ const AboutMe = () => {
           Olá me chamo Vinicyos Ferreira, sou apaixonado por tecnologia
           e inovação. Me identifiquei pela TI aos 17 anos, quando comecei a
           pesquisar no Youtube sobre a área. Experiência de 1 ano com projetos em React,Javascript e Typescript, 
-         , com estudos contínuos em Node.js e SQL para atuar com aplicações fullstack.
+          com estudos contínuos em Node.js e SQL para atuar com aplicações fullstack.
         </p>
         <p>
           Sempre buscando aperfeiçoar para aplicar métodos, técnicas e padrões

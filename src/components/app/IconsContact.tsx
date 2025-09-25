@@ -1,21 +1,25 @@
-import { FaLinkedin } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
-import { FaGithub } from "react-icons/fa"; 
+import { CONTACT_LIST } from "@/constants/ContactList";
 
 const IconsContact = () => {
-  return (
-    <div className="flex flex-col items-end px-5 gap-1">
-        <a href="#">
-            <SiGmail className="text-red-500 hover:bg-accent transition duration-400 p-2 rounded-md" size={45}/>
-        </a> 
-        <a href="#">
-            <FaLinkedin className="text-blue-500 hover:bg-accent transition duration-400 p-2 rounded-md" size={45}/>
-        </a> 
-          <a href="#">
-            <FaGithub className="text-white hover:bg-accent transition duration-400 p-2 rounded-md" size={45}/>
-        </a> 
-    </div>
-  )
-}
 
-export default IconsContact
+    const newContactList = CONTACT_LIST.filter((contact) => {
+      return contact.socialMedia !== "Whatsapp";
+    })
+  
+
+  return (
+    <div className="flex flex-col items-end gap-1">
+      {newContactList.map((icon) => (
+        <a
+          key={icon.socialMedia}
+          href={icon.urlSocialMedia}
+          className=" scale-100 hover:bg-accent transition-all p-2 rounded-md cursor-pointer hover:scale-110"
+        >
+          {icon.icon}
+        </a>
+      ))}
+    </div>
+  );
+};
+
+export default IconsContact;

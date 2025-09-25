@@ -2,7 +2,7 @@ const AboutMe = () => {
   return (
     <div className="flex flex-col items-center justify-center mt-20" id="aboutMe">
       <div>
-        <h2 className="font-bold text-primary text-2xl">Sobre</h2>
+        <h2 className="font-bold text-primary text-2xl">Um pouco sobre mim</h2>
       </div>
       <div className="w-5/6 space-y-5 text-sm">
         <p className="mt-2">

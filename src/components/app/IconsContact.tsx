@@ -2,7 +2,6 @@ import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { FaGithub } from "react-icons/fa"; 
 
-
 const IconsContact = () => {
   return (
     <div className="flex flex-col items-end px-5 gap-1">

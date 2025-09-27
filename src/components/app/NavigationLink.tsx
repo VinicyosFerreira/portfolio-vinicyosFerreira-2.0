@@ -1,11 +1,11 @@
 import type React from 'react';
 
-interface Children {
+interface NavigationLinkProps {
   href?: string;
   closeMenu?: () => void;
   children: React.ReactNode;
 }
-const NavigationLink = ({ children, href, closeMenu }: Children) => {
+const NavigationLink = ({ children, href, closeMenu }: NavigationLinkProps) => {
   return (
     <div className="text-primary text-center px-5">
       <a

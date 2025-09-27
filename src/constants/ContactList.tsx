@@ -3,13 +3,13 @@ import { SiGmail } from 'react-icons/si';
 import { FaGithub } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa';
 
-interface ContactList {
+interface CONTACT_LIST_TYPE {
     socialMedia: string;
     urlSocialMedia?: string;
     icon: React.ReactNode;
 }
 
-export const CONTACT_LIST: ContactList[] = [
+export const CONTACT_LIST: CONTACT_LIST_TYPE[] = [
   {
     socialMedia: 'Linkedin',
     urlSocialMedia: 'https://www.linkedin.com/in/vinicyos-ferreira/',

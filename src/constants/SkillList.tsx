@@ -9,13 +9,13 @@ import {
   SiNodedotjs
 } from 'react-icons/si';
 
-interface SkillList {
+interface SKILLS_LIST_TYPE {
     id: number,
     name: string,
     icon: React.ReactNode,
 }
 
-const skillList: SkillList[] = [
+const SKILLS_LIST: SKILLS_LIST_TYPE[] = [
     {id: 1, name: "HTML", icon: <SiHtml5 className="text-red-500 w-20 h-20"/>},
     {id: 2, name: "CSS", icon: <SiCss3 className="text-blue-500 w-20 h-20"/>},
     {id: 3, name: "Javascript", icon: <SiJavascript className="text-yellow-500 w-20 h-20"/>},
@@ -26,4 +26,4 @@ const skillList: SkillList[] = [
     {id: 8, name: "Node.js", icon: <SiNodedotjs className="text-green-500 w-20 h-20"/>},
 ]
 
-export default skillList
+export default SKILLS_LIST

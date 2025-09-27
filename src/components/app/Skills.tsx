@@ -1,4 +1,4 @@
-import skillList from '@/constants/SkillList';
+import SKILLS_LIST from '@/constants/SkillList';
 import Skill from './Skill';
 
 const Skills = () => {
@@ -10,7 +10,7 @@ const Skills = () => {
         </h2>
       </div>
       <div className="grid grid-cols-[repeat(auto-fit,120px)] grid-rows-2 gap-3 justify-center">
-        {skillList.map((skill) => (
+        {SKILLS_LIST.map((skill) => (
           <div key={skill.id}>
             <Skill>
                 <span className='text-sm font-semibold'>{skill.name}</span>

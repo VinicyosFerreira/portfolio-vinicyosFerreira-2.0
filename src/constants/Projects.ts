@@ -3,7 +3,7 @@ import coverTaskManager from '../assets/imgs/cover_task_mananger.png';
 import coverDevNotes from '../assets/imgs/cover_dev_notes.png';
 import coverLandingPage from '../assets/imgs/cover_landing_page.png';
 
-interface Projects {
+export interface PROJECTS_TYPE {
   id: number;
   name: string;
   description: string;
@@ -13,7 +13,7 @@ interface Projects {
   demoURL: string;
 }
 
-const PROJECTS: Projects[] = [
+export const PROJECTS: PROJECTS_TYPE[] = [
   {
     id: 1,
     name: 'Task Mananger FSC',
@@ -53,5 +53,5 @@ const PROJECTS: Projects[] = [
   }
 ];
 
-export default PROJECTS;
+
 

@@ -1,16 +1,31 @@
 import type React from 'react';
 
 interface NavigationLinkProps {
-  href?: string;
-  closeMenu?: () => void;
   children: React.ReactNode;
+  href: string;
+  size?: 'sm' | 'xl';
+  bgHover? : 'bgHoverOne' | 'bgHoverTwo';
+  closeMenu?: () => void;
 }
-const NavigationLink = ({ children, href, closeMenu }: NavigationLinkProps) => {
+const NavigationLink = ({ children, href, size = 'sm' , bgHover = 'bgHoverOne' , closeMenu }: NavigationLinkProps) => {
+
+  const buttonVariants = {
+    base: 'font-medium text-primary cursor-pointer hover:transition duration-300 p-2 rounded-md',
+    size : {
+      sm: 'text-sm',
+      xl: 'text-xl'
+    },
+    bgHover : {
+      bgHoverOne: 'hover:bg-accent',
+      bgHoverTwo: 'hover:bg-foreground/75'
+    }
+  }
+
   return (
-    <div className="text-primary text-center px-5">
+    <div className='text-center'>
       <a
         href={href}
-        className="font-medium cursor-pointer hover:bg-accent transition duration-300 p-2 rounded-md text-xl"
+        className={`${buttonVariants.base} ${buttonVariants.size[size]} ${buttonVariants.bgHover[bgHover]}`}
         onClick={closeMenu}
       >
         {children}

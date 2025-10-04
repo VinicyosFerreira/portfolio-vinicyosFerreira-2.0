@@ -3,9 +3,9 @@ import Skill from './Skill';
 
 const Skills = () => {
   return (
-    <div className="w-5/6 mx-auto mt-10" id="skills">
+    <div className="w-5/6 mx-auto mt-20 md:w-3/5" id="skills">
       <div>
-        <h2 className="text-primary text-center mb-5 font-bold text-2xl">
+        <h2 className="text-primary text-center mb-5 font-bold text-2xl md:text-3xl">
           Habilidades
         </h2>
       </div>

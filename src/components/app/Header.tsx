@@ -1,7 +1,7 @@
 import { CodeIcon } from 'lucide-react';
 import { Button } from '../ui/button';
-import NavigationMenu from './NavigationMenu';
-import NewMenuNavigation from './NewMenuNavigation';
+import MenuMobile from './MenuMobile';
+import MenuDesktop from './MenuDesktop'
 
 const Header = () => {
   return (
@@ -12,7 +12,8 @@ const Header = () => {
         </Button>
         <h1 className='text-primary text-xl font-semibold'>Vinicyos Ferreira</h1>
       </div>
-      <NewMenuNavigation />
+      <MenuMobile />
+      <MenuDesktop/>
     </header>
   );
 };

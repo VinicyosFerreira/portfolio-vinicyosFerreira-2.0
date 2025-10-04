@@ -7,7 +7,7 @@ import IconsContact from './IconsContact';
 import { CSSTransition } from 'react-transition-group';
 import { useRef } from 'react';
 
-const NewMenuNavigation = () => {
+const MenuMobile = () => {
   const [isOpen, setIsOpen] = useState(false);
   const nodeRef = useRef(null);
 
@@ -54,19 +54,19 @@ const NewMenuNavigation = () => {
             X
           </Button>
           <nav className="flex flex-col gap-5 justify-center items-center">
-            <NavigationLink href="#" closeMenu={() => closeMenu()}>
+            <NavigationLink href="#" closeMenu={() => closeMenu()} size="xl">
               Home
             </NavigationLink>
-            <NavigationLink href="#aboutMe" closeMenu={() => closeMenu()}>
+            <NavigationLink href="#aboutMe" closeMenu={() => closeMenu()} size="xl">
               Sobre
             </NavigationLink>
-            <NavigationLink href="#projects" closeMenu={() => closeMenu()}>
+            <NavigationLink href="#projects" closeMenu={() => closeMenu()} size="xl">
               Projetos
             </NavigationLink>
-            <NavigationLink href="#skills" closeMenu={() => closeMenu()}>
+            <NavigationLink href="#skills" closeMenu={() => closeMenu()} size="xl">
               Habilidades
             </NavigationLink>
-            <NavigationLink href="#contacts" closeMenu={() => closeMenu()}>
+            <NavigationLink href="#contacts" closeMenu={() => closeMenu()} size="xl">
               Contatos
             </NavigationLink>
             <IconsContact />
@@ -77,4 +77,4 @@ const NewMenuNavigation = () => {
   );
 };
 
-export default NewMenuNavigation;
+export default MenuMobile;

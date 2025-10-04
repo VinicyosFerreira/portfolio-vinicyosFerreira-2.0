@@ -11,7 +11,7 @@ const ContactMe = () => {
       <h2 className="text-primary text-center mb-5 font-bold text-2xl">
         Contatos
       </h2>
-      <div className="grid grid-cols-2 gap-2 w-1/2 mx-auto">
+      <div className="grid grid-cols-2 gap-2 w-[90%] mx-auto md:w-1/3">
         {CONTACT_LIST.map((contact) => (
           <div
             key={contact.socialMedia}
@@ -20,8 +20,8 @@ const ContactMe = () => {
             <div className="p-3 rounded-full hover:scale-110 transition-all">
               {contact.icon}
             </div>
-            <p className="text-foreground font-semibold text-sm">
-              {contact.socialMedia}
+            <p className="text-foreground font-semibold text-xs lg:text-sm">
+              {contact.username}
             </p>
           </div>
         ))}
@@ -29,7 +29,7 @@ const ContactMe = () => {
       <Button
         variant={'outline'}
         size={'lg'}
-        className="w-1/3 mx-auto cursor-pointer flex mb-4"
+        className="w-1/3 mx-auto cursor-pointer flex mt-8 mb-4 md:w-1/5"
       >
         Download CV{' '}
         <span>

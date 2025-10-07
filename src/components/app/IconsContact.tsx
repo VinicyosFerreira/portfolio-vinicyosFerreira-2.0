@@ -12,6 +12,7 @@ const IconsContact = () => {
       {newContactList.map((icon) => (
         <a
           key={icon.socialMedia}
+          target="_blank"
           href={icon.urlSocialMedia}
           className=" scale-100 hover:bg-accent transition-all p-2 rounded-md cursor-pointer hover:scale-110"
         >

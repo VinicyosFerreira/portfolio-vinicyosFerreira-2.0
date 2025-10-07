@@ -8,7 +8,7 @@ const ContactMe = () => {
       className="w-full mx-auto mt-10 space-y-4 p-2  after:content-[''] after:w-full after:h-0.5 after:block 
     after:bg-foreground after:opacity-30 "
     >
-      <h2 className="text-primary text-center mb-5 font-bold text-2xl">
+      <h2 className="text-primary text-center mb-5 font-bold text-2xl md:text-3xl">
         Contatos
       </h2>
       <div className="grid grid-cols-2 gap-2 w-[90%] mx-auto md:w-1/3">
@@ -18,7 +18,9 @@ const ContactMe = () => {
             className="flex flex-col justify-center items-center cursor-pointer rounded-full"
           >
             <div className="p-3 rounded-full hover:scale-110 transition-all">
-              {contact.icon}
+              <a href={contact.urlSocialMedia} target='_blank'>
+                {contact.icon}
+              </a>
             </div>
             <p className="text-foreground font-semibold text-xs lg:text-sm">
               {contact.username}

@@ -19,17 +19,20 @@ export const CONTACT_LIST: CONTACT_LIST_TYPE[] = [
   },
   {
     socialMedia: 'Gmail',
+    urlSocialMedia: 'mailto:vinicyosferreiradev@gmail.com',
     icon: <SiGmail className="text-red-500 " size={35} />,
     username: 'vinicyosferreiradev@gmail.com',
   },
   {
     socialMedia: 'Github',
+    urlSocialMedia : 'https://github.com/VinicyosFerreira',
     icon: <FaGithub className="text-white" size={35} />,
     username: 'VinicyosFerreira',
   },
   {
     socialMedia: 'Whatsapp',
     icon: <FaWhatsapp className="text-green-500" size={35} />,
+    urlSocialMedia: 'https://wa.me/5541988731434',
     username: '(41) 98873-1434',
   },
 ];

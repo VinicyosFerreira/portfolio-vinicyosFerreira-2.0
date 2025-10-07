@@ -17,7 +17,7 @@ const NavigationLink = ({ children, href, size = 'sm' , bgHover = 'bgHoverOne' ,
     },
     bgHover : {
       bgHoverOne: 'hover:bg-accent',
-      bgHoverTwo: 'hover:bg-foreground/75'
+      bgHoverTwo: 'hover:bg-muted-foreground/20'
     }
   }
 

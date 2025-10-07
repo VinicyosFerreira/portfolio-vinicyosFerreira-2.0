@@ -8,7 +8,8 @@ const AboutMe = () => {
         <p className="mt-2">
           Olá me chamo Vinicyos Ferreira, sou apaixonado por tecnologia
           e inovação. Me identifiquei pela TI aos 17 anos, quando comecei a
-          pesquisar no Youtube sobre a área. Experiência de 1 ano com projetos em React,Javascript e Typescript, 
+          pesquisar no Youtube sobre a área. Atualmente, estou graduando em Análise e desenvolvimento
+          de sistemas e tenho experiência de 1 ano com projetos em React,Javascript e Typescript, 
           com estudos contínuos em Node.js e SQL para atuar com aplicações fullstack.
         </p>
         <p>

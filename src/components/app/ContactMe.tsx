@@ -18,7 +18,7 @@ const ContactMe = () => {
             className="flex flex-col justify-center items-center cursor-pointer rounded-full"
           >
             <div className="p-3 rounded-full hover:scale-110 transition-all">
-              <a href={contact.urlSocialMedia} target='_blank'>
+              <a href={contact.urlSocialMedia} target="_blank">
                 {contact.icon}
               </a>
             </div>
@@ -29,14 +29,21 @@ const ContactMe = () => {
         ))}
       </div>
       <Button
-        variant={'outline'}
-        size={'lg'}
-        className="w-1/3 mx-auto cursor-pointer flex mt-8 mb-4 md:w-1/5"
+        variant="link"
+        asChild
+        size="lg"
+        className="w-1/3 my-5 mx-auto cursor-pointer flex md:w-1/5 text-foreground font-semibold bg-muted-foreground/20 
+        hover:bg-muted-foreground/40"
       >
-        Download CV{' '}
-        <span>
+        <a
+          href="https://drive.google.com/file/d/1pt9hJLUTQ80cPxUmuUtr7E5mIb2JHbWI/view"
+          target="_blank"
+          rel="noreferrer noopener"
+          className=''
+        >
+          <span> Download CV </span>
           <FaDownload />
-        </span>
+        </a>
       </Button>
     </div>
   );

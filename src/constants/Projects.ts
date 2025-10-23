@@ -17,41 +17,54 @@ export const PROJECTS: PROJECTS_TYPE[] = [
   {
     id: 1,
     name: 'Task Mananger FSC',
-    description: 'Aplicação para gerenciamento de tarefas.',
+    description: `CRUD completo de tarefas, com listagem organizada e um dashboard de status que mostra em tempo real as 
+    tarefas disponíveis, concluídas, em andamento e não iniciadas`,
     imgURL: coverTaskManager,
-    technologies: ['React', 'Javascript', 'Tailwind', 'Vite' , 'JSON Server', 'React Query' , 'React Hook Form'],
-    repositorieURL: "https://github.com/VinicyosFerreira/To-Do-List-Mananger",
-    demoURL: "https://to-do-list-mananger.vercel.app"
+    technologies: [
+      'React',
+      'Javascript',
+      'Tailwind',
+      'Vite',
+      'JSON Server',
+      'React Query',
+      'React Hook Form',
+    ],
+    repositorieURL: 'https://github.com/VinicyosFerreira/To-Do-List-Mananger',
+    demoURL: 'https://to-do-list-mananger.vercel.app',
   },
   {
     id: 2,
     name: 'News Finder',
-    description:
-      `Aplicação que localiza notícias .`,
+    description: `Aplicação que localiza notícias e imagens realizando requisições e filtrando os resultados, e 
+    exibindo os resultados em um layout responsivo.`,
     imgURL: coverNewsFinder,
-    technologies: ['React', 'Javascript', 'CSS', 'Create React App' , 'Airtable' , 'Rest API'],
-    repositorieURL: "https://github.com/VinicyosFerreira/Newtab-Newsfinder",
-    demoURL: "https://newtabnewsfinder.netlify.app"
+    technologies: [
+      'React',
+      'Javascript',
+      'CSS',
+      'Create React App',
+      'Airtable',
+      'Rest API',
+    ],
+    repositorieURL: 'https://github.com/VinicyosFerreira/Newtab-Newsfinder',
+    demoURL: 'https://newtabnewsfinder.netlify.app',
   },
   {
     id: 3,
     name: 'Dev Notes',
-    description: 'Aplicação para gerenciamento de notas.',
+    description: 'Um editor de notas web , simples e intuitivo para escrever anotações , organizar tarefas e auxiliar na produtividade',
     imgURL: coverDevNotes,
-    technologies: ['HTML' , 'CSS' , 'Javascript'],
-    repositorieURL: "https://github.com/VinicyosFerreira/Dev_Notes",
-    demoURL: "https://vinicyosferreira.github.io/Dev_Notes/"
+    technologies: ['HTML', 'CSS', 'Javascript'],
+    repositorieURL: 'https://github.com/VinicyosFerreira/Dev_Notes',
+    demoURL: 'https://vinicyosferreira.github.io/Dev_Notes/',
   },
   {
     id: 4,
     name: 'Landing Page',
-    description: 'Aplicação para simulação de landing page',
+    description: 'Simulação de Landing Page, que seria baseado em formulário e algoritmos , entregando ao usuário uma listagem de produtos alinhadas com seu perfil.',
     imgURL: coverLandingPage,
-    technologies: ['React' , 'Javascript' , 'CSS' , 'Formik' , 'Yup', 'Rest API'],
-    repositorieURL: "https://github.com/VinicyosFerreira/Landing-Page",
-    demoURL: "https://vinicyosferreira.github.io/Landing_Page/"
-  }
+    technologies: ['React', 'Javascript', 'CSS', 'Formik', 'Yup', 'Rest API'],
+    repositorieURL: 'https://github.com/VinicyosFerreira/Landing_Page',
+    demoURL: 'https://vinicyosferreira.github.io/Landing_Page/',
+  },
 ];
-
-
-

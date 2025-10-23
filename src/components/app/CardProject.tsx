@@ -35,6 +35,7 @@ const CardProject = ({project}: {project: PROJECTS_TYPE}) => {
           >
             <div className="bg-accent cursor-pointer p-2 w-45 rounded-lg">
               <a
+                href={project.repositorieURL}
                 className="text-primary font-semibold flex justify-center items-center gap-2"
                 target="_blank"
               >

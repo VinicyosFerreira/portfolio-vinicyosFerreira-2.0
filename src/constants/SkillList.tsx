@@ -8,7 +8,8 @@ import {
   SiBootstrap,
   SiNodedotjs,
   SiDocker,
-  SiPostgresql
+  SiNextdotjs,
+  SiPostgresql,
 } from 'react-icons/si';
 
 interface SKILLS_LIST_TYPE {
@@ -28,6 +29,7 @@ const SKILLS_LIST: SKILLS_LIST_TYPE[] = [
     {id: 8, name: "Node.js", icon: <SiNodedotjs className="text-[#3C873A] w-20 h-20"/>},
     {id: 9, name: "Docker", icon: <SiDocker className="text-[#1D63ED] w-20 h-20"/>},
     {id: 10, name: "PostgreSQL", icon: <SiPostgresql className="text-[#0064a5] w-20 h-20"/>},
+    {id: 11 , name: "Next.js" , icon: <SiNextdotjs className="text-white w-20 h-20"/>}
 ]
 
 export default SKILLS_LIST

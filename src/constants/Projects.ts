@@ -1,6 +1,6 @@
 import coverNewsFinder from '../assets/imgs/cover_news_finder.png';
 import coverTaskManager from '../assets/imgs/cover_task_mananger.png';
-import coverDevNotes from '../assets/imgs/cover_dev_notes.png';
+import coverAparatusBarber from '../assets/imgs/cover_aparatus_barber.png';
 import coverLandingPage from '../assets/imgs/cover_landing_page.png';
 
 export interface PROJECTS_TYPE {
@@ -16,6 +16,25 @@ export interface PROJECTS_TYPE {
 export const PROJECTS: PROJECTS_TYPE[] = [
   {
     id: 1,
+    name: 'Aparatus Barber',
+    description:
+      'Saas para agendamento de barbearia, com escolha por estabelecimentos, serviços, agendamentos e integração com gateway de pagamento.',
+    imgURL: coverAparatusBarber,
+    technologies: [
+      'Next.js',
+      'React',
+      'Typescript',
+      'Tailwind',
+      'Prisma',
+      'PostgreSQL',
+      'Better Auth',
+      'Stripe',
+    ],
+    repositorieURL: 'https://github.com/VinicyosFerreira/aparatus',
+    demoURL: 'https://aparatus-chi.vercel.app/',
+  },
+  {
+    id: 2,
     name: 'Task Mananger FSC',
     description: `CRUD completo de tarefas, com listagem organizada e um dashboard de status que mostra em tempo real as 
     tarefas disponíveis, concluídas, em andamento e não iniciadas`,
@@ -33,7 +52,7 @@ export const PROJECTS: PROJECTS_TYPE[] = [
     demoURL: 'https://to-do-list-mananger.vercel.app',
   },
   {
-    id: 2,
+    id: 3,
     name: 'News Finder',
     description: `Aplicação que localiza notícias e imagens realizando requisições e filtrando os resultados, e 
     exibindo os resultados em um layout responsivo.`,
@@ -50,18 +69,10 @@ export const PROJECTS: PROJECTS_TYPE[] = [
     demoURL: 'https://newtabnewsfinder.netlify.app',
   },
   {
-    id: 3,
-    name: 'Dev Notes',
-    description: 'Um editor de notas web , simples e intuitivo para escrever anotações , organizar tarefas e auxiliar na produtividade',
-    imgURL: coverDevNotes,
-    technologies: ['HTML', 'CSS', 'Javascript'],
-    repositorieURL: 'https://github.com/VinicyosFerreira/Dev_Notes',
-    demoURL: 'https://vinicyosferreira.github.io/Dev_Notes/',
-  },
-  {
     id: 4,
     name: 'Landing Page',
-    description: 'Simulação de Landing Page, que seria baseado em formulário e algoritmos , entregando ao usuário uma listagem de produtos alinhadas com seu perfil.',
+    description:
+      'Simulação de Landing Page, que seria baseado em formulário e algoritmos , entregando ao usuário uma listagem de produtos alinhadas com seu perfil.',
     imgURL: coverLandingPage,
     technologies: ['React', 'Javascript', 'CSS', 'Formik', 'Yup', 'Rest API'],
     repositorieURL: 'https://github.com/VinicyosFerreira/Landing_Page',

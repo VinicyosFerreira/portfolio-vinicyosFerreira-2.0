@@ -1,7 +1,7 @@
 import coverNewsFinder from '../assets/imgs/cover_news_finder.png';
 import coverTaskManager from '../assets/imgs/cover_task_mananger.png';
 import coverAparatusBarber from '../assets/imgs/cover_aparatus_barber.png';
-import coverLandingPage from '../assets/imgs/cover_landing_page.png';
+import coverPortalProjetoVoluntario from '../assets/imgs/cover_projeto_portal-voluntarios.jpg'
 
 export interface PROJECTS_TYPE {
   id: number;
@@ -9,7 +9,7 @@ export interface PROJECTS_TYPE {
   description: string;
   technologies: string[];
   imgURL: string;
-  repositorieURL: string;
+  repositorieURL?: string;
   demoURL: string;
 }
 
@@ -37,7 +37,7 @@ export const PROJECTS: PROJECTS_TYPE[] = [
     id: 2,
     name: 'Task Mananger FSC',
     description: `CRUD completo de tarefas, com listagem organizada e um dashboard de status que mostra em tempo real as 
-    tarefas disponíveis, concluídas, em andamento e não iniciadas`,
+    tarefas disponíveis, concluídas, em andamento e não iniciadas.`,
     imgURL: coverTaskManager,
     technologies: [
       'React',
@@ -70,12 +70,11 @@ export const PROJECTS: PROJECTS_TYPE[] = [
   },
   {
     id: 4,
-    name: 'Landing Page',
+    name: 'Portal de Projetos Voluntários',
     description:
-      'Simulação de Landing Page, que seria baseado em formulário e algoritmos , entregando ao usuário uma listagem de produtos alinhadas com seu perfil.',
-    imgURL: coverLandingPage,
-    technologies: ['React', 'Javascript', 'CSS', 'Formik', 'Yup', 'Rest API'],
-    repositorieURL: 'https://github.com/VinicyosFerreira/Landing_Page',
-    demoURL: 'https://vinicyosferreira.github.io/Landing_Page/',
+      'Portal focado em networking e capacitação profissional através de projetos voluntários reais.',
+    imgURL:  coverPortalProjetoVoluntario,
+    technologies: ['React', 'API REST', 'React Query', 'Tailwind CSS', 'React Router DOM'],
+    demoURL: 'https://volunteer-hub-swart.vercel.app/'
   },
 ];

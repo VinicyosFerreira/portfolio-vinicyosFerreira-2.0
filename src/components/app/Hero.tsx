@@ -9,8 +9,8 @@ const Hero = () => {
         </h2>
         <p className="font-bold text-lg md:text-2xl">
           <Typewriter
-            words={['Desenvolvedor front-end']}
-            typeSpeed={85}
+            words={['Desenvolvedor Full Stack']}
+            typeSpeed={80}
             loop={1}
           />
         </p>

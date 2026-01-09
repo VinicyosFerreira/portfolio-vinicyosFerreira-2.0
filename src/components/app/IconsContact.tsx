@@ -1,11 +1,9 @@
-import { CONTACT_LIST } from "@/constants/ContactList";
+import { CONTACT_LIST } from '@/constants/ContactList';
 
 const IconsContact = () => {
-
-    const newContactList = CONTACT_LIST.filter((contact) => {
-      return contact.socialMedia !== "Whatsapp";
-    })
-  
+  const newContactList = CONTACT_LIST.filter((contact) => {
+    return contact.socialMedia !== 'Whatsapp';
+  });
 
   return (
     <div className="flex flex-col items-end gap-1">

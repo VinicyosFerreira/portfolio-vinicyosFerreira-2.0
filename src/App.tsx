@@ -3,6 +3,7 @@ import Hero from './components/app/Hero';
 import AboutMe from './components/app/AboutMe';
 import Skills from './components/app/Skills';
 import Projects from './components/app/Projects';
+import MetricCards from './components/app/MetricCards';
 import Footer from './components/app/Footer';
 
 function App() {
@@ -10,10 +11,11 @@ function App() {
     <div>
       <Header />
       <Hero />
-      <AboutMe/>
-      <Skills/>
-      <Projects/>
-      <Footer/>
+      <AboutMe />
+      <Skills />
+      <MetricCards />
+      <Projects />
+      <Footer />
     </div>
   );
 }

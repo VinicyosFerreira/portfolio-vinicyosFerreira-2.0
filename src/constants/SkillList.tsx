@@ -10,28 +10,102 @@ import {
   SiDocker,
   SiNextdotjs,
   SiPostgresql,
-  SiExpress
+  SiExpress,
+  SiPython,
+  SiPandas,
+  SiMysql,
+  SiSelenium,
 } from 'react-icons/si';
 
 interface SKILLS_LIST_TYPE {
-    id: number,
-    name: string,
-    icon: React.ReactNode,
+  id: number;
+  name: string;
+  icon: React.ReactNode;
 }
 
-const SKILLS_LIST: SKILLS_LIST_TYPE[] = [
-    {id: 1, name: "HTML", icon: <SiHtml5 className="text-[#E34F26] w-20 h-20"/>},
-    {id: 2, name: "CSS", icon: <SiCss3 className="text-[#007ACC] w-20 h-20"/>},
-    {id: 3, name: "Javascript", icon: <SiJavascript className="text-[#F0DB4F] w-20 h-20"/>},
-    {id: 4, name: "React", icon: <SiReact className="text-blue-500 w-20 h-20"/>},
-    {id: 5, name: "Typescript", icon: <SiTypescript className="text-[#3178C6] w-20 h-20"/>},
-    {id: 6, name: "Tailwind", icon: <SiTailwindcss className="text-sky-500 w-20 h-20"/>},
-    {id: 7, name: "Bootstrap", icon: <SiBootstrap className="text-purple-500 w-20 h-20"/>},
-    {id: 8, name: "Node.js", icon: <SiNodedotjs className="text-[#3C873A] w-20 h-20"/>},
-    {id: 9, name: "Docker", icon: <SiDocker className="text-[#1D63ED] w-20 h-20"/>},
-    {id: 10, name: "PostgreSQL", icon: <SiPostgresql className="text-[#0064a5] w-20 h-20"/>},
-    {id: 11 , name: "Next.js" , icon: <SiNextdotjs className="text-white w-20 h-20"/>},
-    {id: 12 , name: "Express.js" , icon: <SiExpress className="text-[#45556c] w-20 h-20"/>}
-]
+const SKILLS_FRONT_END: SKILLS_LIST_TYPE[] = [
+  {
+    id: 1,
+    name: 'HTML',
+    icon: <SiHtml5 className="text-[#E34F26] w-20 h-20" />,
+  },
+  { id: 2, name: 'CSS', icon: <SiCss3 className="text-[#007ACC] w-20 h-20" /> },
+  {
+    id: 3,
+    name: 'Javascript',
+    icon: <SiJavascript className="text-[#F0DB4F] w-20 h-20" />,
+  },
+  {
+    id: 4,
+    name: 'React',
+    icon: <SiReact className="text-blue-500 w-20 h-20" />,
+  },
+  {
+    id: 5,
+    name: 'Typescript',
+    icon: <SiTypescript className="text-[#3178C6] w-20 h-20" />,
+  },
+  {
+    id: 6,
+    name: 'Tailwind',
+    icon: <SiTailwindcss className="text-sky-500 w-20 h-20" />,
+  },
+  {
+    id: 7,
+    name: 'Bootstrap',
+    icon: <SiBootstrap className="text-purple-500 w-20 h-20" />,
+  },
+  {
+    id: 11,
+    name: 'Next.js',
+    icon: <SiNextdotjs className="text-[#fff] w-20 h-20" />,
+  },
+];
 
-export default SKILLS_LIST
+const SKILLS_BACK_END: SKILLS_LIST_TYPE[] = [
+  {
+    id: 8,
+    name: 'Node.js',
+    icon: <SiNodedotjs className="text-[#3C873A] w-20 h-20" />,
+  },
+  {
+    id: 9,
+    name: 'Docker',
+    icon: <SiDocker className="text-[#1D63ED] w-20 h-20" />,
+  },
+  {
+    id: 12,
+    name: 'Express.js',
+    icon: <SiExpress className="text-[#45556c] w-20 h-20" />,
+  },
+];
+
+const SKILLS_DATA: SKILLS_LIST_TYPE[] = [
+  {
+    id: 13,
+    name: 'Python',
+    icon: <SiPython className="text-[#4B8BBE] w-20 h-20" />,
+  },
+  {
+    id: 10,
+    name: 'PostgreSQL',
+    icon: <SiPostgresql className="text-[#0064a5] w-20 h-20" />,
+  },
+  {
+    id: 14,
+    name: 'Pandas',
+    icon: <SiPandas className="text-[#E70488] w-20 h-20" />,
+  },
+  {
+    id: 15,
+    name: 'MySQL',
+    icon: <SiMysql className="text-[#4479A1] w-20 h-20" />,
+  },
+  {
+    id: 16,
+    name: 'Selenium',
+    icon: <SiSelenium className="text-[#2F7ED8] w-20 h-20" />,
+  },
+];
+
+export { SKILLS_FRONT_END, SKILLS_BACK_END, SKILLS_DATA };

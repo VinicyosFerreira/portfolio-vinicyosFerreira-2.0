@@ -5,7 +5,7 @@ import MenuDesktop from './MenuDesktop'
 
 const Header = () => {
   return (
-    <header className=" bg-secondary justify-between flex items-center p-2">
+    <header className=" bg-secondary justify-between flex items-center p-2 sticky top-0 z-10">
       <div className='flex items-center gap-2.5'>
         <Button variant="ghost" size="icon" asChild>
           <CodeIcon className="text-primary"/>

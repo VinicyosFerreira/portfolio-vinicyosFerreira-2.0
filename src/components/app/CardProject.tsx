@@ -19,7 +19,9 @@ const CardProject = ({ project }: { project: PROJECTS_TYPE }) => {
         <CardTitle className="text-center font-semibold text-lg">
           {project.name}
         </CardTitle>
-        <CardDescription className='h-[55px]'>{project.description}</CardDescription>
+        <CardDescription className="h-[55px]">
+          {project.description}
+        </CardDescription>
       </CardHeader>
       <CardContent>
         <div className="relative group">
@@ -40,26 +42,24 @@ const CardProject = ({ project }: { project: PROJECTS_TYPE }) => {
                   className="text-primary font-semibold flex justify-center items-center gap-2"
                   target="_blank"
                 >
-                  {project.repositorieURL && (
-                    <>
-                      <FaGithub size={30} className="text-white" />
-                      <span>Ver repositório</span>
-                    </>
-                  )}
+                  <FaGithub size={30} className="text-white" />
+                  <span>Ver repositório</span>
                 </a>
               </div>
             )}
 
-            <div className="bg-accent cursor-pointer w-45 p-2 rounded-lg">
-              <a
-                href={project.demoURL}
-                className="text-primary font-semibold flex justify-center items-center gap-2"
-                target="_blank"
-              >
-                <FaRocket size={30} className="text-white" />
-                <span>Ver demo</span>
-              </a>
-            </div>
+            {project.demoURL && (
+              <div className="bg-accent cursor-pointer w-45 p-2 rounded-lg">
+                <a
+                  href={project.demoURL}
+                  className="text-primary font-semibold flex justify-center items-center gap-2"
+                  target="_blank"
+                >
+                  <FaRocket size={30} className="text-white" />
+                  <span>Ver demo</span>
+                </a>
+              </div>
+            )}
           </div>
         </div>
       </CardContent>

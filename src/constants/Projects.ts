@@ -2,6 +2,7 @@ import coverTaskManager from '../assets/imgs/cover_task_mananger.png';
 import coverAparatusBarber from '../assets/imgs/cover_aparatus_barber.png';
 import coverPortalProjetoVoluntario from '../assets/imgs/cover_projeto_portal-voluntarios.jpg';
 import coverLandingPage from '../assets/imgs/cover_landing_page.png';
+import coverDashboardRPAMonitoring from '../assets/imgs/cover_dash_rpa_montitoring.png';
 
 export interface PROJECTS_TYPE {
   id: number;
@@ -10,7 +11,7 @@ export interface PROJECTS_TYPE {
   technologies: string[];
   imgURL: string;
   repositorieURL?: string;
-  demoURL: string;
+  demoURL?: string;
 }
 
 export const PROJECTS: PROJECTS_TYPE[] = [
@@ -53,15 +54,6 @@ export const PROJECTS: PROJECTS_TYPE[] = [
   },
   {
     id: 3,
-    name: 'Landing Page',
-    description: `Aplicação que realiza uma simulação de Landing Page, que seria baseado em formulário e algoritmos , entregando ao usuário uma listagem de produtos alinhadas com seu perfil.`,
-    imgURL: coverLandingPage,
-    technologies: ['React', 'Javascript', 'CSS', 'Formik e Yup', 'Rest API'],
-    repositorieURL: 'https://github.com/VinicyosFerreira/Landing_Page',
-    demoURL: 'https://vinicyosferreira.github.io/Landing_Page',
-  },
-  {
-    id: 4,
     name: 'Portal de Projetos Voluntários',
     description:
       'Portal focado em networking e capacitação profissional através de projetos voluntários reais.',
@@ -73,6 +65,25 @@ export const PROJECTS: PROJECTS_TYPE[] = [
       'Tailwind CSS',
       'React Router DOM',
     ],
-    demoURL: 'https://volunteer-hub-swart.vercel.app/',
+    demoURL: 'https://www.getxp.dev.br/',
+  },
+  {
+    id: 4,
+    name: 'Landing Page',
+    description: `Aplicação que realiza uma simulação de Landing Page, que seria baseado em formulário e algoritmos , entregando ao usuário uma listagem de produtos alinhadas com seu perfil.`,
+    imgURL: coverLandingPage,
+    technologies: ['React', 'Javascript', 'CSS', 'Formik e Yup', 'Rest API'],
+    repositorieURL: 'https://github.com/VinicyosFerreira/Landing_Page',
+    demoURL: 'https://vinicyosferreira.github.io/Landing_Page',
+  },
+  {
+    id: 5,
+    name: 'Dashboard RPA para Monitoramento de Preço',
+    description:
+      'Aplicação que monitora preços de notebooks realizando coleta de dados em tempo real',
+    imgURL: coverDashboardRPAMonitoring,
+    technologies: ['Python', 'Scrapy', 'Pandas', 'Ploty ', 'Streamlit'],
+    repositorieURL:
+      'https://github.com/VinicyosFerreira/rpa_dashboard_price_monitoring',
   },
 ];

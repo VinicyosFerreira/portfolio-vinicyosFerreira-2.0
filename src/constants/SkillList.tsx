@@ -15,6 +15,7 @@ import {
   SiPandas,
   SiMysql,
   SiSelenium,
+  SiJest
 } from 'react-icons/si';
 
 interface SKILLS_LIST_TYPE {
@@ -23,7 +24,7 @@ interface SKILLS_LIST_TYPE {
   icon: React.ReactNode;
 }
 
-const SKILLS_FRONT_END: SKILLS_LIST_TYPE[] = [
+export const SKILLS: SKILLS_LIST_TYPE[] = [
   {
     id: 1,
     name: 'HTML',
@@ -60,9 +61,6 @@ const SKILLS_FRONT_END: SKILLS_LIST_TYPE[] = [
     name: 'Next.js',
     icon: <SiNextdotjs className="text-[#fff] w-20 h-20" />,
   },
-];
-
-const SKILLS_BACK_END: SKILLS_LIST_TYPE[] = [
   {
     id: 8,
     name: 'Node.js',
@@ -78,9 +76,6 @@ const SKILLS_BACK_END: SKILLS_LIST_TYPE[] = [
     name: 'Express.js',
     icon: <SiExpress className="text-[#45556c] w-20 h-20" />,
   },
-];
-
-const SKILLS_DATA: SKILLS_LIST_TYPE[] = [
   {
     id: 13,
     name: 'Python',
@@ -106,6 +101,10 @@ const SKILLS_DATA: SKILLS_LIST_TYPE[] = [
     name: 'Selenium',
     icon: <SiSelenium className="text-[#2F7ED8] w-20 h-20" />,
   },
+  {
+    id: 17,
+    name: 'Jest',
+    icon: <SiJest className="text-[#C21325] w-20 h-20" />,
+  }
 ];
 
-export { SKILLS_FRONT_END, SKILLS_BACK_END, SKILLS_DATA };

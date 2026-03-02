@@ -19,7 +19,7 @@ const CardProject = ({ project }: { project: PROJECTS_TYPE }) => {
         <CardTitle className="text-center font-semibold text-lg">
           {project.name}
         </CardTitle>
-        <CardDescription className="h-[55px]">
+        <CardDescription className='min-h-[60px] max-h-max'>
           {project.description}
         </CardDescription>
       </CardHeader>

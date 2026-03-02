@@ -3,7 +3,7 @@ import Skill from './Skill';
 
 const Skills = () => {
   return (
-    <div className="md:w-3/6 mt-20 mx-auto" id="skills">
+    <div className="md:w-3/6 w-5/6 mt-20 mx-auto" id="skills">
       <div>
         <h2 className="text-primary text-center mb-5 font-bold text-2xl md:text-3xl">
           Habilidades
@@ -11,7 +11,7 @@ const Skills = () => {
       </div>
 
       <div className='space-y-3'>
-        <div className="grid grid-cols-[repeat(auto-fit,120px)] gap-3 justify-center">
+        <div className="grid grid-cols-[repeat(auto-fit,100px)] gap-3 justify-center">
           {SKILLS.map((skill) => (
             <div key={skill.id}>
               <Skill>

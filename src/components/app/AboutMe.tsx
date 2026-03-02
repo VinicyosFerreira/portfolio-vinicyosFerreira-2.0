@@ -4,19 +4,19 @@ const AboutMe = () => {
       <div>
         <h2 className="font-bold text-primary text-2xl md:text-3xl">Um pouco sobre mim</h2>
       </div>
-      <div className="w-5/6 space-y-5 text-sm md:text-lg">
+      <div className="w-5/6 space-y-5 md:text-lg">
         <p className="mt-2">
           Olá me chamo Vinicyos Ferreira, sou apaixonado por tecnologia
           e inovação. Me identifiquei pela TI aos 17 anos, quando comecei a
           pesquisar no Youtube sobre a área. Atualmente, estou graduando em Análise e desenvolvimento
-          de sistemas e tenho experiência de 2 anos com projetos em React,Javascript, Typescript, 
-          Node, Express e banco de dados SQL.
+          de sistemas, com mais de 2 anos de experiência em 
+          desenvolvimento de aplicações web modernas, especializado em React, Node.js e arquiteturas escaláveis.
         </p>
         <p>
-          Sempre buscando aperfeiçoar para aplicar métodos, técnicas e padrões
-          alinhados com as melhores práticas do mercado. Meu objetivo é
-          desenvolver projetos robustos e escaláveis no âmbito tecnológico,
-          visando entregar resultados que agreguem valor às pessoas.
+          Atuação com ferramentas de infraestrutura e DevOps, como Docker e CI/CD, garantindo estabilidade e
+           continuidade no deploy. Possuo mais de 2 anos de atuação direta em suporte e infraestrutura, 
+           o que me permite colaborar com uma visão crítica sobre sustentação de sistemas e 
+           foco total na experiência do usuário. 
         </p>
       </div>
     </div>

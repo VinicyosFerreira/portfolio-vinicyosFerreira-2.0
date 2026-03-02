@@ -36,10 +36,9 @@ const ContactMe = () => {
         hover:bg-muted-foreground/40"
       >
         <a
-          href="https://drive.google.com/file/d/1DUd3Tc3D9ifpadoPhX-acylpe-3WuG_z/view?usp=drive_link"
+          href="https://drive.google.com/file/d/1UG72THQ94218gD8piQfMVKB7lKYf3PIT/view?usp=drive_link"
           target="_blank"
           rel="noreferrer noopener"
-          className=""
         >
           <span> Download CV </span>
           <FaDownload />
